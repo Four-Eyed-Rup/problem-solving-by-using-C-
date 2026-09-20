@@ -1,3 +1,4 @@
+// show all available digits in the number
 #include <iostream>
 using namespace std;
 
