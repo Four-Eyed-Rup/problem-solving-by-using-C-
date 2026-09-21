@@ -1,4 +1,5 @@
 // armstrong number
+// pow function returns decimal number thats why we use round function for rounding off the decimal number.
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -11,7 +12,7 @@ void digitCount(int x){
         num /= 10;
     }
 }
-int factorial(int x){
+int exponent(int x){
     int num =x;
     return round(pow(num, totaldigit));
 }
@@ -19,7 +20,7 @@ int armstrong(int x){
     int num = x, digit, result=0;
     while(num !=0){
         digit = num % 10;
-        result += factorial(digit); 
+        result += exponent(digit); 
         num /= 10;
     }
     return result;
